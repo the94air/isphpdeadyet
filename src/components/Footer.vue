@@ -20,7 +20,7 @@ const toggle = ref(false);
 </script>
 
 <template>
-  <footer class="pt-12">
+  <footer class="py-12">
     <div class="container mx-auto px-2">
       <div class="max-w-lg mx-auto">
         <div class="mb-4">
