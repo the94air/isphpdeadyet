@@ -1,18 +1,17 @@
 <template>
   <main>
     <section class="pt-12">
-      <div class="container mx-auto px-2">
-        <div class="max-w-lg mx-auto">
+      <div class="container mx-auto px-4">
+        <div class="max-w-[35rem] mx-auto">
           <p class="mb-4">
             <strong>PHP</strong>, which stands for
             <a
-              class="underline decoration-dotted"
+              class="underline hover:opacity-80"
               href="https://www.php.net/manual/en/preface.php"
               rel="nofollow"
               target="_blank"
             >
-              "PHP: Hypertext Preprocessor"
-            </a>
+              "PHP: Hypertext Preprocessor"</a>
             is a widely-used Open Source general-purpose scripting language that
             is especially suited for web development and can be embedded into
             HTML. Its syntax draws upon C, Java, and Perl, and is easy to learn.

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 
 const links = [
@@ -21,15 +21,18 @@ const toggle = ref(false);
 
 <template>
   <footer class="py-12">
-    <div class="container mx-auto px-2">
-      <div class="max-w-lg mx-auto">
+    <div class="container mx-auto px-4">
+      <div class="max-w-[35rem] mx-auto">
         <div class="mb-4">
           <button
-            class="transition-colors ease-in-out duration-300 uppercase text-gray-500 dark:text-gray-400 font-bold"
+            class="transition-colors ease-in-out duration-300 uppercase text-gray-500 dark:text-gray-400 font-semibold"
             :class="toggle ? '!text-black dark:!text-white' : ''"
             @click="toggle = !toggle"
           >
-            Resources
+            <span class="flex items-center">
+              Resources
+              <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path :d="toggle ? 'M4 9H11L7.5 4.5L4 9Z' : 'M4 6H11L7.5 10.5L4 6Z'" fill="currentColor"></path></svg>
+            </span>
           </button>
         </div>
         <Transition>
@@ -38,7 +41,7 @@ const toggle = ref(false);
               <li v-for="(link, index) in links" :key="index">
                 <a
                   :href="link.url"
-                  class="underline decoration-dotted"
+                  class="underline hover:opacity-80"
                   target="_blank"
                   rel="nofollow"
                 >
