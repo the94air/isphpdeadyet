@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import Loader from "./Loader.vue";
 
 const loading = ref(true);
 const isYes = ref(false);
