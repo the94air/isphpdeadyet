@@ -4,11 +4,11 @@ export default defineNuxtConfig({
   app: {
     head: {
       script: [
-        {
+        import.meta.env.PROD ? {
           defer: true,
           src: "https://tics.abdalla.sd/script.js",
           "data-website-id": "89698437-2520-44eb-af55-9eca17cb0d46",
-        },
+        } : undefined,
       ],
     }
   },
