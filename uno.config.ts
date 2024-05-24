@@ -1,5 +1,10 @@
 import { defineConfig, presetUno } from 'unocss'
-import defaultTheme from 'tailwindcss/defaultTheme'
+
+const systemFonts = {
+  sans: `, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
+  serif: `, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif`,
+  mono: `, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`
+}
 
 export default defineConfig({
   presets: [
@@ -9,7 +14,7 @@ export default defineConfig({
   ],
   theme: {
     fontFamily: {
-      "general-sans": `"General Sans", ` + defaultTheme.fontFamily.sans.join(", "),
+      "general-sans": `"General Sans"` + systemFonts.sans,
     }
   }
 })
