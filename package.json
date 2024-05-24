@@ -7,12 +7,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "nuxt:upgrade": "nuxi upgrade --force"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@types/node": "^20.12.12",
     "@unocss/nuxt": "^0.56.1",
-    "nuxt": "^3.7.3",
+    "nuxt": "^3.11.2",
     "tailwindcss": "^3.3.3"
   }
 }
