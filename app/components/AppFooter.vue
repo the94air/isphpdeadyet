@@ -1,22 +1,20 @@
-<script setup lang="ts">
-import { ref } from "vue";
-
+<script lang="ts" setup>
 const links = [
   {
-    label: "Preface - PHP Manual",
-    url: "https://www.php.net/manual/en/preface.php",
+    label: 'Preface - PHP Manual',
+    url: 'https://www.php.net/manual/en/preface.php',
   },
   {
-    label: "Usage statistics of PHP for websites - W3Techs",
-    url: "https://w3techs.com/technologies/details/pl-php",
+    label: 'Usage statistics of PHP for websites - W3Techs',
+    url: 'https://w3techs.com/technologies/details/pl-php',
   },
   {
-    label: "PHP v8.0 major updates - PHP announcement",
-    url: "https://www.php.net/releases/8.0/en.php",
+    label: 'PHP v8.0 major updates - PHP announcement',
+    url: 'https://www.php.net/releases/8.0/en.php',
   },
-];
+]
 
-const toggle = ref(false);
+const toggle = ref(false)
 </script>
 
 <template>
@@ -31,14 +29,26 @@ const toggle = ref(false);
           >
             <span class="flex items-center">
               Resources
-              <svg width="30" height="30" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path :d="toggle ? 'M4 9H11L7.5 4.5L4 9Z' : 'M4 6H11L7.5 10.5L4 6Z'" fill="currentColor"></path></svg>
+              <svg
+                width="30"
+                height="30"
+                viewBox="0 0 15 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              ><path
+                :d="toggle ? 'M4 9H11L7.5 4.5L4 9Z' : 'M4 6H11L7.5 10.5L4 6Z'"
+                fill="currentColor"
+              /></svg>
             </span>
           </button>
         </div>
         <Transition>
           <div v-if="toggle">
             <ul class="list-disc list-inside">
-              <li v-for="(link, index) in links" :key="index">
+              <li
+                v-for="(link, index) in links"
+                :key="index"
+              >
                 <a
                   :href="link.url"
                   class="underline hover:opacity-80"

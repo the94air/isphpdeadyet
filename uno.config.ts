@@ -1,20 +1,21 @@
-import { defineConfig, presetUno } from 'unocss'
+import { defineConfig } from 'unocss'
+import presetWind4 from '@unocss/preset-wind4'
 
 const systemFonts = {
   sans: `, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`,
   serif: `, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif`,
-  mono: `, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`
+  mono: `, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`,
 }
 
 export default defineConfig({
   presets: [
-    presetUno({
-      dark: 'media'
+    presetWind4({
+      dark: 'media',
     }),
   ],
   theme: {
-    fontFamily: {
-      "general-sans": `"General Sans"` + systemFonts.sans,
-    }
-  }
+    font: {
+      'general-sans': `"General Sans"` + systemFonts.sans,
+    },
+  },
 })
