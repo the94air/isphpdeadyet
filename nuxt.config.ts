@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    '@nuxt/eslint',
     '@unocss/nuxt',
   ],
   devtools: { enabled: false },
@@ -21,5 +22,10 @@ export default defineNuxtConfig({
   typescript: {
     strict: true,
     typeCheck: true,
+  },
+  eslint: {
+    config: {
+      stylistic: true,
+    },
   },
 })

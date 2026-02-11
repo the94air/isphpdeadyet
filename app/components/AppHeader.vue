@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const loading = ref(true)
+const loading = ref(false)
 const isYes = ref(false)
 const showYesCount = ref(0)
 
@@ -32,8 +32,10 @@ const fetchStatus = () => {
   }, rand(1, 4) * 400)
 }
 
-fetchStatus()
-console.log('Nice try ;)')
+onMounted(() => {
+  fetchStatus()
+  console.log('Nice try ;)')
+})
 </script>
 
 <template>
