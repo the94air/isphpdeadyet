@@ -11,7 +11,7 @@ export default defineNuxtConfig({
           ? {
               'defer': true,
               'src': 'https://tics.abdalla.sd/script.js',
-              'data-website-id': '89698437-2520-44eb-af55-9eca17cb0d46',
+              'data-website-id': 'edddfac9-6f36-42b4-b4a8-52a6d30c89f2',
             }
           : undefined,
       ],
