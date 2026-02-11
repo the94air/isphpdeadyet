@@ -21,7 +21,7 @@
     "@types/node": "^25.2.3",
     "@unocss/nuxt": "^66.6.0",
     "@unocss/preset-wind4": "^66.6.0",
-    "eslint": "9.x",
+    "eslint": "^9.39.2",
     "typescript": "^5.9.3",
     "unocss": "^66.6.0",
     "vue-tsc": "^3.2.4"
